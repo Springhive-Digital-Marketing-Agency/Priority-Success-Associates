@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Priority Success Associates</title>
+    <meta name="description" content="Compassionate, individualized services designed to help individuals and families navigate challenges, build practical skills, and create meaningful change.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(to right, #F8F7F3 0%, rgba(248, 247, 243, 0.9) 30%, rgba(248, 247, 243, 0) 70%), url('assets/images/hero-services.jpg');
+            text-align: left;
+        }
+        
+        .service-detail-section {
+            padding: var(--space-lg) 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .service-detail-section:last-child {
+            border-bottom: none;
+        }
+
+        .service-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        .service-content-grid.reverse .text-content {
+            order: 2;
+        }
+        
+        .service-content-grid.reverse .image-wrapper {
+            order: 1;
+        }
+
+        .image-wrapper {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (max-width: 768px) {
+            .service-content-grid, .service-content-grid.reverse {
+                grid-template-columns: 1fr;
+            }
+            .service-content-grid.reverse .text-content,
+            .service-content-grid.reverse .image-wrapper {
+                order: initial;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Mon to Fri: 9:00am to 6:00pm
+                </span>
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    toppriority2021@gmail.com
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-circle">f</a>
+                <a href="#" class="social-circle">in</a>
+                <a href="#" class="social-circle">ig</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="brand-title">Priority Success</span>
+                    <span class="brand-subtitle">Associates</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" class="active">Services ▾</a></li>
+                    <li><a href="#">Peer Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="#" class="btn-icon btn-gold" style="margin-left: 2rem;"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container fade-up">
+            <div style="max-width: 1500px;">
+                <h1>Services That Meet You Where You Are</h1>
+                <p style="font-size: 16px;">Compassionate, individualized services designed to help individuals and families navigate challenges, build practical skills, and create meaningful change.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <div class="container">
+        <!-- Outpatient Therapy -->
+        <section id="outpatient" class="service-detail-section fade-up">
+            <div class="service-content-grid">
+                <div class="text-content">
+                    <h2>Outpatient Therapy</h2>
+                    <p>Professional therapy services designed to help clients address emotional concerns, stress, anxiety, depression, relationship difficulties, life transitions, substance use concerns, and other challenges affecting everyday life.</p>
+                    <a href="contact.html?service=outpatient" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Request Appointment</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-outpatient.jpg" alt="Outpatient Therapy" style="width: 100%; height: 350px; object-fit: cover; background-color: #eee;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Individual Therapy -->
+        <section id="individual" class="service-detail-section fade-up">
+            <div class="service-content-grid reverse">
+                <div class="text-content">
+                    <h2>Individual Therapy</h2>
+                    <p>One-on-one therapy focused on each client's individual needs, strengths, concerns, and personal goals. We provide a safe, confidential space to explore emotions, develop coping strategies, and work toward a more fulfilling life.</p>
+                    <a href="contact.html?service=individual" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Get Started</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-individual.jpg" alt="Individual Therapy" style="width: 100%; height: 350px; object-fit: cover; background-color: #ddd;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Couples Therapy -->
+        <section id="couples" class="service-detail-section fade-up">
+            <div class="service-content-grid">
+                <div class="text-content">
+                    <h2>Couples Therapy</h2>
+                    <p>Therapy designed to help couples strengthen communication, work through conflict, improve connection, and develop healthier relationship patterns. Whether you're navigating a specific crisis or looking to deepen your bond, our therapists are here to support your relationship.</p>
+                    <a href="contact.html?service=couples" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Request Appointment</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-couples.jpg" alt="Couples Therapy" style="width: 100%; height: 350px; object-fit: cover; background-color: #eee;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Therapy -->
+        <section id="family" class="service-detail-section fade-up">
+            <div class="service-content-grid reverse">
+                <div class="text-content">
+                    <h2>Family Therapy</h2>
+                    <p>Support for families experiencing communication difficulties, changing family roles, conflict, reunification concerns, or other challenges affecting family relationships. We work collaboratively to foster understanding and create a more harmonious home environment.</p>
+                    <a href="contact.html?service=family" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Get Started</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-family.jpg" alt="Family Therapy" style="width: 100%; height: 350px; object-fit: cover; background-color: #ddd;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Youth & Adolescent Therapy -->
+        <section id="youth" class="service-detail-section fade-up">
+            <div class="service-content-grid">
+                <div class="text-content">
+                    <h2>Youth & Adolescent Therapy</h2>
+                    <p>Age-appropriate therapy addressing emotional, social, behavioral, family, and school-related concerns. We provide a supportive environment where young people can safely explore their feelings, build resilience, and develop healthy coping mechanisms.</p>
+                    <a href="contact.html?service=youth" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Request Appointment</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-youth.jpg" alt="Youth & Adolescent Therapy" style="width: 100%; height: 350px; object-fit: cover; background-color: #eee;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Substance Use & Recovery Support -->
+        <section id="recovery" class="service-detail-section fade-up">
+            <div class="service-content-grid reverse">
+                <div class="text-content">
+                    <h2>Substance Use & Recovery Support</h2>
+                    <p>Therapy and peer support for individuals working through substance use concerns, recovery, relapse prevention, and challenges associated with maintaining positive life changes. We meet you where you are with non-judgmental, compassionate care.</p>
+                    <a href="contact.html?service=substance" class="btn-icon mt-sm"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Get Started</a>
+                </div>
+                <div class="image-wrapper">
+                    <img src="assets/images/service-recovery.jpg" alt="Substance Use & Recovery Support" style="width: 100%; height: 350px; object-fit: cover; background-color: #ddd;">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-green text-center">
+        <div class="container fade-up">
+            <h2 style="color: var(--white);">Ready to Take the Next Step?</h2>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Our compassionate team is here to help you navigate your journey toward meaningful change.</p>
+            <a href="contact.html" class="btn-icon btn-gold"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Priority Success Associates</h4>
+                    <p>"Change Your Mind. Change Your Life."</p>
+                    <p class="mt-sm">
+                        2442 Elendil Lane<br>
+                        Charlotte, NC 28269<br>
+                        <small><em>*Location pending verification</em></small>
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="peer-support.html">Peer Support</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#outpatient">Outpatient Therapy</a></li>
+                        <li><a href="services.html#individual">Individual Therapy</a></li>
+                        <li><a href="services.html#couples">Couples Therapy</a></li>
+                        <li><a href="services.html#family">Family Therapy</a></li>
+                        <li><a href="services.html#youth">Youth & Adolescent Therapy</a></li>
+                        <li><a href="peer-support.html">Peer Support</a></li>
+                        <li><a href="services.html#recovery">Substance Use & Recovery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>704-322-1178</li>
+                        <li>980-451-2344</li>
+                        <li><a href="mailto:toppriority2021@gmail.com">toppriority2021@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 Priority Success Associates. All rights reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

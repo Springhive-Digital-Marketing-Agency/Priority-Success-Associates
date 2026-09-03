@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Priority Success Associates</title>
+    <meta name="description" content="Contact Priority Success Associates in Charlotte, NC to schedule an appointment or learn more about our therapy and peer support services.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(44, 48, 46, 0.35), rgba(44, 48, 46, 0.35)), url('assets/images/hero-contact.jpg');
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-xl);
+        }
+
+        .contact-info-card {
+            background: var(--deep-green);
+            color: var(--white);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+        }
+
+        .contact-info-card h3 {
+            color: var(--warm-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item h4 {
+            color: var(--white);
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info-item p, .contact-info-item a {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+        }
+        
+        .contact-info-item a:hover {
+            color: var(--warm-gold);
+        }
+
+        .contact-form-wrapper {
+            background: var(--white);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--deep-green);
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-lg);
+            margin-top: var(--space-lg);
+            color: var(--charcoal-light);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Mon to Fri: 9:00am to 6:00pm
+                </span>
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    toppriority2021@gmail.com
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="social-circle">f</a>
+                <a href="#" class="social-circle">in</a>
+                <a href="#" class="social-circle">ig</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="brand-title">Priority Success</span>
+                    <span class="brand-subtitle">Associates</span>
+                </a>
+            </div>
+            
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services ▾</a></li>
+                    <li><a href="#">Peer Support</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+                <a href="#" class="btn-icon btn-gold" style="margin-left: 2rem;"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container fade-up">
+            <div style="max-width: 1500px;"><h1>Let's Start the Conversation</h1></div>
+            <p style="max-width: 700px; margin: 0 auto; font-size: 16px;">Meaningful change starts with taking the first step. Reach out today to schedule an appointment or learn more about our services.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-cream">
+        <div class="container contact-grid fade-up">
+            
+            <!-- Info -->
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-info-item">
+                    <h4>Address</h4>
+                    <p>
+                        2442 Elendil Lane<br>
+                        Charlotte, NC 28269<br>
+                        <small style="color: var(--warm-gold); display: block; margin-top: 5px;">*Address is pending final verification</small>
+                    </p>
+                </div>
+                
+                <div class="contact-info-item">
+                    <h4>Phone</h4>
+                    <p>Primary: <a href="tel:704-322-1178">704-322-1178</a></p>
+                    <p>Alternate: <a href="tel:980-451-2344">980-451-2344</a></p>
+                </div>
+                
+                <div class="contact-info-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:toppriority2021@gmail.com">toppriority2021@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-info-item" style="margin-top: 2rem;">
+                    <p><small><em>If you are experiencing a medical emergency or psychiatric crisis, please call 911 or go to the nearest emergency room immediately.</em></small></p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form-wrapper">
+                <h3 class="mb-sm">Send us an Inquiry</h3>
+                <form action="#" method="POST" id="mainContactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMethod">Preferred Contact Method</label>
+                        <select id="contactMethod" class="form-control">
+                            <option value="phone">Phone Call</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text Message</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" class="form-control">
+                            <option value="general">Not Sure / General Inquiry</option>
+                            <option value="outpatient">Outpatient Therapy</option>
+                            <option value="individual">Individual Therapy</option>
+                            <option value="couples">Couples Therapy</option>
+                            <option value="family">Family Therapy</option>
+                            <option value="youth">Youth & Adolescent Therapy</option>
+                            <option value="peer">Peer Support Services</option>
+                            <option value="substance">Substance Use & Recovery Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">How can we help you? *</label>
+                        <textarea id="message" rows="5" class="form-control" placeholder="Please do not include sensitive medical information in this form." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-icon" style="width: 100%; justify-content: center;"><span class="icon-circle"><i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i></span>Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container fade-up">
+            <div class="map-placeholder">
+                [ Interactive Map Placeholder for Charlotte, NC location pending address verification ]
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Priority Success Associates</h4>
+                    <p>"Change Your Mind. Change Your Life."</p>
+                    <p class="mt-sm">
+                        2442 Elendil Lane<br>
+                        Charlotte, NC 28269<br>
+                        <small><em>*Location pending verification</em></small>
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="peer-support.html">Peer Support</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#outpatient">Outpatient Therapy</a></li>
+                        <li><a href="services.html#individual">Individual Therapy</a></li>
+                        <li><a href="services.html#couples">Couples Therapy</a></li>
+                        <li><a href="services.html#family">Family Therapy</a></li>
+                        <li><a href="services.html#youth">Youth & Adolescent Therapy</a></li>
+                        <li><a href="peer-support.html">Peer Support</a></li>
+                        <li><a href="services.html#recovery">Substance Use & Recovery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>704-322-1178</li>
+                        <li>980-451-2344</li>
+                        <li><a href="mailto:toppriority2021@gmail.com">toppriority2021@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 Priority Success Associates. All rights reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Auto-select service based on URL parameter
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceParam = urlParams.get('service');
+            if (serviceParam) {
+                const select = document.getElementById('service');
+                if (select) {
+                    select.value = serviceParam;
+                }
+            }
+
+            // Simple form prevention for mock
+            const form = document.getElementById('mainContactForm');
+            if(form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your inquiry. A member of our team will contact you shortly.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
